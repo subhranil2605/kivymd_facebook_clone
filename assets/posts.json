@@ -1,0 +1,19 @@
+{
+  "Bryen Bose": {
+    "avatar": "https://images.unsplash.com/photo-1621786514880-6e8996eb7b22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+    "post": "https://images.unsplash.com/photo-1621786514880-6e8996eb7b22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+    "likes": "50",
+    "comments": "51",
+    "caption": "Chilling",
+    "updated_ago": "10 m"
+  },
+
+  "Lalit Nan": {
+    "avatar": "https://images.unsplash.com/photo-1611095968462-3dc56b14454a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+    "post": "https://images.unsplash.com/photo-1621788094300-577b5aa8b8bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    "likes": "100",
+    "comments": "101",
+    "caption": "Yo!!",
+    "updated_ago": "2 h"
+  }
+}

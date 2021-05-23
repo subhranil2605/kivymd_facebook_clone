@@ -1,0 +1,80 @@
+<Post>:
+    orientation: 'vertical'
+    size_hint_y: None
+    height: "420dp"
+
+    MDBoxLayout:
+        padding: "5dp"
+        adaptive_height: True
+
+        TwoLineAvatarListItem:
+            text: root.name
+            secondary_text: root.updated_ago
+            divider: None
+            _no_ripple_effect: True
+
+            ImageLeftWidget:
+                source: root.avatar
+                radius: [20, ]
+
+        MDIconButton:
+            icon: "dots-horizontal"
+
+    MDLabel:
+        adaptive_height: True
+        text: root.caption
+    # Actual post
+    FitImage:
+        adaptive_height: True
+        source: root.post
+
+    MDBoxLayout:
+        adaptive_height: True
+        padding: 5
+        spacing: 1
+        FitImage:
+            source: "assets/images/facebook-reactions/like.png"
+            size_hint: None, None
+            size: 15, 15
+            radius: [10, ]
+        FitImage:
+            source: "assets/images/facebook-reactions/love.png"
+            size_hint: None, None
+            size: 15, 15
+            radius: [10, ]
+        FitImage:
+            source: "assets/images/facebook-reactions/haha.png"
+            size_hint: None, None
+            size: 15, 15
+            radius: [10, ]
+
+        MDLabel:
+            text: f"{root.likes}"
+            font_size: 13
+        Widget:
+
+        MDLabel:
+            text: f"{root.comments} comments"
+            shorten: True
+            font_size: 13
+
+    MDBoxLayout:
+        adaptive_height: True
+
+        Reactions:
+            icon: "thumb-up-outline"
+            text: "Like"
+        Widget:
+        Reactions:
+            icon: "comment-outline"
+            text: "Comment"
+        Widget:
+        Reactions:
+            icon: "share-outline"
+            text: "Share"
+
+<Reactions@MDRectangleFlatIconButton>:
+    theme_text_color: "Custom"
+    text_color: 0, 0, 0, 1
+    line_color: 1, 1, 1, 1
+    icon_color: 0, 0, 0, 1
