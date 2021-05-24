@@ -19,7 +19,7 @@ class FacebookApp(MDScreen):
         self.list_posts()
 
     def list_online_friends(self):
-        with open(r"E:\KIvyMD_Facebook\assets\online_friends.json") as f_obj:
+        with open("assets/online_friends.json") as f_obj:
             data = json.load(f_obj)
 
             for friends in data:
