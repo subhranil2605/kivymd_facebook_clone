@@ -18,7 +18,7 @@
         MDBoxLayout:
             adaptive_size: True
             height: 30
-            spacing: 30
+            spacing: 25
 
             MDIconButton:
                 icon: "home"
@@ -27,13 +27,15 @@
             MDIconButton:
                 icon: "account-group-outline"
             MDIconButton:
+                icon: "bell-outline"
+            MDIconButton:
                 icon: "menu"
 
 
         MDBoxLayout:
 
             ScrollView:
-
+                bar_width: 0
                 # Timeline
                 MDBoxLayout:
                     adaptive_height: True
@@ -112,7 +114,7 @@
 
                             MDBoxLayout:
                                 adaptive_width: True
-                                spacing: 30
+                                spacing: 10
                                 padding: 10
 
                                 MDRoundFlatIconButton:
@@ -121,9 +123,10 @@
                                     pos_hint: {'center_x': 0.5, 'center_y': 0.5}
 
                                 MDBoxLayout:
+                                    adaptive_width: True
                                     id: online_friends
                                     padding: 10
-                                    spacing: 50
+                                    spacing: 10
 
                         MDSeparator:
                             size_hint_y: None
@@ -181,6 +184,7 @@
                                                 adaptive_height: True
 
                                     MDBoxLayout:
+                                        adaptive_width: True
                                         id: stories
 
                         MDSeparator:

@@ -21,13 +21,9 @@ class FacebookApp(MDScreen):
     def list_online_friends(self):
         with open("assets/online_friends.json") as f_obj:
             data = json.load(f_obj)
-
             for friends in data:
-                name = friends
-                avatar = data[friends]['avatar']
-                print(name, avatar)
                 self.ids.online_friends.add_widget(OnlineAvatarImage(
-                    avatar=avatar
+                    avatar=data[friends]['avatar']
                 ))
 
     def list_stories(self):

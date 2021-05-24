@@ -1,8 +1,8 @@
 <Post>:
     orientation: 'vertical'
     size_hint_y: None
-    height: "420dp"
-    spacing: 20
+    height: "520dp"
+    spacing: 10
 
     MDBoxLayout:
         padding: "5dp"
@@ -21,9 +21,13 @@
         MDIconButton:
             icon: "dots-horizontal"
 
-    MDLabel:
+    MDBoxLayout:
         adaptive_height: True
-        text: root.caption
+        height: 10
+        padding: 10, 0 , 0, 0
+        MDLabel:
+            adaptive_height: True
+            text: root.caption
 
     # Actual post
     FitImage:
@@ -62,6 +66,7 @@
 
     MDBoxLayout:
         adaptive_height: True
+        padding: 5
 
         Reactions:
             icon: "thumb-up-outline"

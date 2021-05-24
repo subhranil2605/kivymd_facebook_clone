@@ -4,7 +4,7 @@ from kivy.core.window import Window
 
 from facebook_app import FacebookApp
 
-Window.size = (300, 600)
+Window.size = (350, 600)
 
 
 class App(MDApp):

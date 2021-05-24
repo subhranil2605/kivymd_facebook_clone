@@ -1,6 +1,6 @@
-from kivymd.uix.floatlayout import FloatLayout
+from kivymd.uix.relativelayout import MDRelativeLayout
 from kivy.properties import StringProperty
 
 
-class OnlineAvatarImage(FloatLayout):
+class OnlineAvatarImage(MDRelativeLayout):
     avatar = StringProperty()
